@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "example.com/grpc-service/gen/go/sso";
+option go_package = "gen/go/sso";
 
-service auth {
+service Auth {
   rpc Register(RegistertRequest) returns (RegisterResponse);
   rpc Login(LoginRequest) returns (LoginResponse);
   rpc IsAdmin(IsAdminRequest) returns (IsAdminResponse);
